@@ -1,54 +1,75 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <title>Home - Score Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">SCOREBOOK</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Stats</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Vote</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ranklist</a>
-            </li>
-          </ul>
-          <!-- Move the Logout button to the right with ms-auto -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <span class="navbar-title">SCOREBOOK</span>
+      </div>
+      <div class="navbar-links">
+        <a href="#!" class="nav-link">Vote</a>
+        <a href="#!" class="nav-link">Stats</a>
+        <a href="#!" class="nav-link">Rules</a>
+      </div>
+      <div class="navbar-logout">
+        <a href="#!" class="nav-link">Logout</a>
       </div>
     </nav>
+
+    <section>
+      <div class="box">
+        <div class="content">
+          <div class="row">
+
+            <div class="image card-element">
+              <img id="profileImg" src="" alt="Profile Image" />
+            </div>
+
+            <div class="name-age card-element">
+              <h4 class="player-name-age">John Doe, 30</h5>
+            </div>
+
+            <div class="games-played card-element">
+              <h4>All time matches: 124</h4>
+            </div>
+
+            <div class="last-match-rating card-element">
+              <h4>Last match rating: 7.73</h4>
+            </div>
+
+            <div class="all-time-rating card-element">
+              <h4>All time rating: 7.11</h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

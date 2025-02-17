@@ -11,8 +11,10 @@ document.getElementById('loginButton').addEventListener('click', function () {
   window.location.href = 'homepage.html';
 });
 
-// I had to do this so I don't have FOUC
+// Login page pic
 document.querySelector('img').src = loginImage;
+
+// I had to do this so I don't have FOUC
 document.addEventListener('DOMContentLoaded', () => {
   document.body.style.display = 'block';
 });
