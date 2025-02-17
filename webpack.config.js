@@ -4,10 +4,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
-  entry: './src/app.js',
+  entry: {
+    login: './src/login.js',
+    homepage: './src/homepage.js',
+  },
+
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
   },
 
   devtool: process.env.NODE_ENV === 'development' ? 'source-map' : false,
@@ -50,9 +54,16 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Scorebook App',
+      title: 'Login',
       filename: 'login.html',
       template: './src/login.html',
+      chunks: ['login'],
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Homepage',
+      filename: 'homepage.html',
+      template: './src/homepage.html',
+      chunks: ['homepage'],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

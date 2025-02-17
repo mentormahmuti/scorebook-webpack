@@ -1,7 +1,6 @@
 {
   "name": "scorebook-webpack",
   "version": "1.0.0",
-  "main": "app.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve"

@@ -1,6 +1,10 @@
 body {
   background: linear-gradient(to bottom, white, green);
   display: none;
+  font-family: 'Montserrat', serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .bg-image-vertical {
@@ -18,10 +22,51 @@ body {
 }
 
 .title-div {
+  font-family: 'Bungee Shade', serif;
+  font-weight: 400;
+  font-style: normal;
   padding-top: 20px;
 }
 
-.login-button {
-  background-color: white;
+.btn-info {
+  background-color: #7e57c2 !important;
+  border-color: #6a47b0 !important;
+  color: white !important;
   border: none;
+}
+
+.btn-info:hover {
+  background-color: #6a47b0 !important;
+}
+
+.btn-info:active {
+  background-color: #5739a3 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.forgot-password {
+  color: #7e57c2 !important; /* Default soft purple */
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.forgot-password:hover {
+  color: #6a47b0 !important; /* Darker purple on hover */
+}
+
+.forgot-password:active {
+  color: #5739a3 !important; /* Even darker purple on click */
+}
+
+.link-info {
+  color: #7e57c2 !important; /* Default soft purple */
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.link-info:hover {
+  color: #6a47b0 !important; /* Darker purple on hover */
+}
+
+.link-info:active {
+  color: #5739a3 !important; /* Even darker purple on click */
 }
